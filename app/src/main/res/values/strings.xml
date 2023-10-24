@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Memorable Meals</string>
+    <string name="enterNewMeal">Enter New Meal</string>
+    <string name="modifyMeal">Modify Meal Info</string>
+    <string name="viewMeal">View Meals</string>
+    <string name="enterInfoTitle">Remember a New Meal</string>
+    <string name="restaurantHint">Restaurant Name</string>
+    <string name="mealHint">Meal Name</string>
+    <string name="mealCostHint">Cost of Meal</string>
+    <string name="mealRatingPrompt">Rate the meal from 1 to 5</string>
+    <string-array name="mealRating">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="mealCommentsHint">Thoughts about your meal</string>
+</resources>
