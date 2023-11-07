@@ -44,18 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idEditTextRestaurant" />
 
-    <Spinner
-        android:id="@+id/idSpinnerMealRating"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:entries="@array/mealRating"
-        android:prompt="@string/mealRatingPrompt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idEditTextDecimalMealCost" />
-
     <EditText
         android:id="@+id/idEditTextDecimalMealCost"
         android:layout_width="220dp"
@@ -76,15 +64,14 @@
         android:id="@+id/idEdtTxtComments"
         android:layout_width="243dp"
         android:layout_height="104dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center_horizontal|top"
         android:hint="@string/mealCommentsHint"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idSpinnerMealRating" />
+        app:layout_constraintTop_toBottomOf="@+id/idratingBar" />
 
     <Button
         android:id="@+id/idBtnSaveMeal"
@@ -106,4 +93,15 @@
         android:text="@string/btnMainMenu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idEdtTxtComments" />
+
+    <RatingBar
+        android:id="@+id/idratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stepSize="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditTextDecimalMealCost" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RatingBar
 import android.widget.Spinner
 import com.example.memorablemeals.Info.MealInfo
 
@@ -18,7 +19,7 @@ class EnterMealActivity : AppCompatActivity() {
         val txtRestaurantName = findViewById<EditText>(R.id.idEditTextRestaurant)
         val txtMealName = findViewById<EditText>(R.id.idEditTextMealName)
         val txtMealCost = findViewById<EditText>(R.id.idEditTextDecimalMealCost)
-        val spinnerRating = findViewById<Spinner>(R.id.idSpinnerMealRating)
+        val barRating = findViewById<RatingBar>(R.id.idratingBar)
         val txtComments = findViewById<EditText>(R.id.idEdtTxtComments)
         val btnSaveMeal = findViewById<Button>(R.id.idBtnSaveMeal)
         val btnMainMenu = findViewById<Button>(R.id.idBtnMainMenu)
@@ -28,7 +29,7 @@ class EnterMealActivity : AppCompatActivity() {
             val resName = txtRestaurantName.text.toString()
             val mealName = txtMealName.text.toString()
             val rawMealCost = txtMealCost.text.toString()
-            val rating = spinnerRating.selectedItem.toString().toInt()
+            val rating = barRating.rating.toInt()
             val comments = txtComments.text.toString()
             /* check that restaurant name, meal name and meal cost fields aren't empty
                 rating will never be empty, and comments can be blank.
