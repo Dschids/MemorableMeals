@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MemorableMeals"
         tools:targetApi="31">
         <activity
+            android:name=".MealsListView"
+            android:exported="false" />
+        <activity
             android:name=".EnterMealActivity"
             android:exported="false" />
         <activity

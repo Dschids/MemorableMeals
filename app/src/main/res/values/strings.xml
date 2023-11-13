@@ -9,14 +9,6 @@
     <string name="mealHint">Meal Name</string>
     <string name="mealCostHint">Cost of Meal</string>
     <string name="afMealCost">0.00</string>
-    <string name="mealRatingPrompt">Rate the meal from 1 to 5</string>
-    <string-array name="mealRating">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
     <string name="mealCommentsHint">Thoughts about your meal</string>
     <string name="btnEnterMeal">Save Meal</string>
 </resources>

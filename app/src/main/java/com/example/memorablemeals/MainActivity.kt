@@ -15,5 +15,11 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this, EnterMealActivity::class.java)
             startActivity(intent)
         }
+
+        val btnView = findViewById<Button>(R.id.idBtnViewExisting)
+        btnView.setOnClickListener {
+            intent = Intent(this, MealsListView::class.java)
+            startActivity(intent)
+        }
     }
 }
