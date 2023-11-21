@@ -7,7 +7,7 @@
     tools:context=".EditMealInfo">
 
     <EditText
-        android:id="@+id/idEditTextDecimalMealCost2"
+        android:id="@+id/edtTxtEdtDecimalMealCost"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:layout_marginTop="28dp"
@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idratingBar2" />
+        app:layout_constraintTop_toBottomOf="@+id/rbEdtRating" />
 
     <TextView
         android:id="@+id/txtEditMealInfo"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RatingBar
-        android:id="@+id/idratingBar2"
+        android:id="@+id/rbEdtRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -43,10 +43,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idEditTextRestaurant2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEdtRestaurant" />
 
     <EditText
-        android:id="@+id/idEditTextMealName2"
+        android:id="@+id/edtTxtEdtMealName"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtEditMealInfo" />
 
     <EditText
-        android:id="@+id/idEdtTxtComments2"
+        android:id="@+id/edtTxtEdtComments"
         android:layout_width="243dp"
         android:layout_height="104dp"
         android:layout_marginTop="16dp"
@@ -70,10 +70,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idEditTextDecimalMealCost2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEdtDecimalMealCost" />
 
     <EditText
-        android:id="@+id/idEditTextRestaurant2"
+        android:id="@+id/edtTxtEdtRestaurant"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:layout_marginTop="17dp"
@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idEditTextMealName2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEdtMealName" />
 
     <Button
         android:id="@+id/btnEdtSave"
@@ -94,7 +94,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btnEdtDelete"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idEdtTxtComments2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEdtComments" />
 
     <Button
         android:id="@+id/btnEdtDelete"
@@ -104,6 +104,6 @@
         android:layout_marginEnd="56dp"
         android:text="@string/delete"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idEdtTxtComments2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEdtComments" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
