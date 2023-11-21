@@ -24,6 +24,8 @@
         android:layout_height="55dp"
         android:layout_marginTop="4dp"
         android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusedByDefault="false"
         android:numStars="5"
         android:stepSize="1"
         app:layout_constraintEnd_toEndOf="parent"

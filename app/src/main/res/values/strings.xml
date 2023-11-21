@@ -11,4 +11,7 @@
     <string name="afMealCost">0.00</string>
     <string name="mealCommentsHint">Thoughts about your meal</string>
     <string name="btnEnterMeal">Save Meal</string>
+    <string name="delete">Delete Meal</string>
+    <string name="save">Save Changes</string>
+    <string name="editMeal">Edit Selected Meal</string>
 </resources>

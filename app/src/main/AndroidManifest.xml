@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MemorableMeals"
         tools:targetApi="31">
         <activity
+            android:name=".EditMealInfo"
+            android:exported="false" />
+        <activity
+            android:name=".DetailedMealInfo"
+            android:exported="false" />
+        <activity
             android:name=".MealsListView"
             android:exported="false" />
         <activity
