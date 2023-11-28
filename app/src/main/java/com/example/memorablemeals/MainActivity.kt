@@ -12,14 +12,14 @@ class MainActivity : AppCompatActivity() {
 
         val btnNew = findViewById<Button>(R.id.idBtnCreateNew)
         btnNew.setOnClickListener {
-            var intent = Intent(this, EnterMealActivity::class.java)
-            startActivity(intent)
+            var addNew = Intent(this, EnterMealActivity::class.java)
+            startActivity(addNew)
         }
 
         val btnView = findViewById<Button>(R.id.idBtnViewExisting)
         btnView.setOnClickListener {
-            intent = Intent(this, MealsListView::class.java)
-            startActivity(intent)
+            var listView = Intent(this, MealsListView::class.java)
+            startActivity(listView)
         }
     }
 }

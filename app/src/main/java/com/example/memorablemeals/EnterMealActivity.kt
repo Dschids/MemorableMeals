@@ -52,19 +52,25 @@ class EnterMealActivity : AppCompatActivity() {
 
             else {
                 var mealCost = rawMealCost.toDouble()
-                var entry = MealInfo(resName,mealName,mealCost,rating,comments)
-                // TODO do something with this class I made, append it to a list and pass it to a different activity?
+
+                var listView = Intent(this, MealsListView::class.java).apply{
+                    putExtra("mealName", mealName)
+                    putExtra("resName", resName)
+                    putExtra("mealCost", mealCost)
+                    putExtra("rating", rating)
+                    putExtra("mealComments", comments)
+                    putExtra("position", 999)
+                }
+
+                startActivity(listView)
 
             }
-
-
-
 
         }
 
         btnMainMenu.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            var main = Intent(this, MainActivity::class.java)
+            startActivity(main)
         }
     }
 }

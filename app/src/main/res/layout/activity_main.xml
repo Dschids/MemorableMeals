@@ -19,32 +19,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/idBtnModifyExisting"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/modifyMeal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idBtnCreateNew" />
-
-    <Button
         android:id="@+id/idBtnViewExisting"
         android:layout_width="170dp"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="52dp"
         android:text="@string/viewMeal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idBtnModifyExisting" />
+        app:layout_constraintTop_toBottomOf="@+id/idBtnCreateNew" />
 
     <Button
         android:id="@+id/idBtnCreateNew"
         android:layout_width="170dp"
         android:layout_height="60dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="56dp"
         android:text="@string/enterNewMeal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
