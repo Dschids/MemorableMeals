@@ -67,6 +67,7 @@
         android:gravity="center_horizontal|top"
         android:hint="@string/mealCommentsHint"
         android:inputType="text"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"

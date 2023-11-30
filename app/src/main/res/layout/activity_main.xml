@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8FE88D06"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,9 +12,11 @@
         android:layout_width="213dp"
         android:layout_height="85dp"
         android:layout_marginTop="16dp"
+        android:background="#DC673AB7"
         android:gravity="center"
         android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#F8F2F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,12 +45,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="264dp"
-        android:layout_height="249dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="223dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idAppName"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/food" />
 </androidx.constraintlayout.widget.ConstraintLayout>

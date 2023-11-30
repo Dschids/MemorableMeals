@@ -22,6 +22,7 @@
         android:layout_width="222dp"
         android:layout_height="42dp"
         android:layout_marginTop="12dp"
+        android:gravity="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -35,51 +36,55 @@
         android:layout_marginTop="12dp"
         android:focusableInTouchMode="false"
         android:focusedByDefault="false"
+        android:isIndicator="true"
+        android:stepSize="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idDtRestaurantName" />
 
     <TextView
-        android:id="@+id/txtDtCost"
-        android:layout_width="151dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rbDtRating" />
-
-    <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtDtComments"
         android:layout_width="256dp"
         android:layout_height="194dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDtCost" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDtMealCost" />
 
     <Button
-        android:id="@+id/btnListView"
+        android:id="@+id/btnDtListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:text="@string/viewMeal"
-        app:layout_constraintEnd_toStartOf="@+id/btnDeleteMeal"
+        app:layout_constraintEnd_toStartOf="@+id/btnDtEditMeal"
         app:layout_constraintHorizontal_bias="0.588"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDtComments" />
 
     <Button
-        android:id="@+id/btnDeleteMeal"
+        android:id="@+id/btnDtEditMeal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="44dp"
         android:text="@string/modifyMeal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDtComments" />
+
+    <TextView
+        android:id="@+id/txtDtMealCost"
+        android:layout_width="186dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="113dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbDtRating" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
