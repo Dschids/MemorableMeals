@@ -16,6 +16,7 @@ class EnterMealActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_enter_meal)
 
+        // link to views in the xml
         val txtRestaurantName = findViewById<EditText>(R.id.idEditTextRestaurant)
         val txtMealName = findViewById<EditText>(R.id.idEditTextMealName)
         val txtMealCost = findViewById<EditText>(R.id.idEditTextDecimalMealCost)
@@ -46,10 +47,10 @@ class EnterMealActivity : AppCompatActivity() {
                 txtMealCost.error = "Meal Cost can't be blank."
                 txtMealCost.requestFocus()
             }
+
             /* if all required fields contain something convert rawMealCost to a double and pass all
             the variables into the MealInfo class
              */
-
             else {
                 var mealCost = rawMealCost.toDouble()
 
@@ -63,9 +64,7 @@ class EnterMealActivity : AppCompatActivity() {
                 }
 
                 startActivity(listView)
-
             }
-
         }
 
         btnMainMenu.setOnClickListener {

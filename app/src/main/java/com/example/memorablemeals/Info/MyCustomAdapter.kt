@@ -21,6 +21,7 @@ class MyCustomAdapter (var ctx: Context,
         val mealName = view.findViewById<TextView>(R.id.idTxtMealName)
         val rating = view.findViewById<RatingBar>(R.id.idRbMealRating)
 
+        // set view contents using list of Models
         mealName.text = items[position].mealName
         rating.rating = items[position].rating.toFloat()
 

@@ -14,12 +14,15 @@ class EditMealInfo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_meal_info)
 
-
+        // link the buttons from the xml, create an intent to get extras
         val btnEdtSave = findViewById<Button>(R.id.btnEdtSave)
         val btnEdtDelete = findViewById<Button>(R.id.btnEdtDelete)
-
         val extras = intent.extras
+
+        // getting extras if there are any to get
         if (extras != null) {
+
+            // initialise all the variables
             var mealName = " "
             var resName = " "
             var rating = 0
@@ -27,6 +30,9 @@ class EditMealInfo : AppCompatActivity() {
             var mealComments = " "
             var position = 0
 
+            /* set all the variables using the correct get extra
+            the strings need to have the .toString or it starts throwing errors
+             */
             mealName = extras.getString("mealName").toString()
             resName = extras.getString("resName").toString()
             mealCost = extras.getDouble("mealCost")
@@ -34,12 +40,14 @@ class EditMealInfo : AppCompatActivity() {
             mealComments = extras.getString("mealComments").toString()
             position = extras.getInt("position")
 
+            // link all the text boxes in the xml
             val txtMealName = findViewById<TextView>(R.id.edtTxtEdtMealName)
             val txtResName = findViewById<TextView>(R.id.edtTxtEdtRestaurant)
             val rbMealRating = findViewById<RatingBar>(R.id.rbEdtRating)
             val txtMealCost = findViewById<TextView>(R.id.edtTxtEdtDecimalMealCost)
             val txtMealComments = findViewById<TextView>(R.id.edtTxtEdtComments)
 
+            // set the text boxes to the variables from get extra
             txtResName.text = resName
             txtMealName.text = mealName
             rbMealRating.rating = rating.toFloat()
@@ -84,6 +92,10 @@ class EditMealInfo : AppCompatActivity() {
                 }
             }
 
+            /* clicking the delete button creates the delete variable and sets it to true
+            then pass the position number and delete variable using put extra, throws a toast message
+            that the entry was deleted and takes you back to list view activity
+             */
             btnEdtDelete.setOnClickListener {
                 val delete = true
                 val edtListView = Intent(this, MealsListView::class.java).apply{

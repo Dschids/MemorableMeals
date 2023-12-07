@@ -7,6 +7,6 @@ class MealInfo (
     var mealRating: Int,
     var mealComments: String){
 
-
+// MealInfo holds all the information for meals
 
 }

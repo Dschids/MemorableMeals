@@ -10,6 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /* simple two button screen, one button takes you to the list view activity and the other
+        takes you to the add new meal activity
+         */
         val btnNew = findViewById<Button>(R.id.idBtnCreateNew)
         btnNew.setOnClickListener {
             var addNew = Intent(this, EnterMealActivity::class.java)
